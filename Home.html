@@ -5,99 +5,285 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <style>
         .navbar-collapse{
-            flex-grow: 0;
+            float: left;
+            position: absolute;
+            left: 100%;
+            margin-left: -40%;
+            font-size: large;
+        }
+        .content{
+        margin-top: -20px;
+        }
+        *{
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        }
+        .column .card img{
+            border-radius: 3px;
+        }
+        .column .card h3{
+            margin-top: 2px;
+        } 
+        .column .card .price{
+            font-size: medium;
+        }
+        .row {margin: 0 -5px;}
+
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        }
+        .footer .text-center{
+            font-size: medium;
+        }
+        .carousel-caption{
+            color: whitesmoke;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <nav class="navbar navbar-expand-lg bg-light fixed-top">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="data:image/png;base64,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"
-            height="40px" width="80px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            TOURS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">SEARCH TOURS</a></li>
-                            <li><a class="dropdown-item" href="#">SINGLE TOUR</a></li>
-                            <li><a class="dropdown-item" href="#">HOT DEALS</a></li>
-                            <li><a class="dropdown-item" href="#">LAYOUTS</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            BOOKINGS
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">DATE</a></li>
-                            <li><a class="dropdown-item" href="#">DATE & TIME</a></li>
-                            <li><a class="dropdown-item" href="#">NO DATE</a></li>
-                            <li><a class="dropdown-item" href="#">PRICE BY PERIODS</a></li>
-                            <li><a class="dropdown-item" href="#">OPTIONAL SERVICE</a></li>
-                            <li><a class="dropdown-item" href="#">ADULT & KIDS</a></li>
-                            <li><a class="dropdown-item" href="#">OTHER</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PAGES
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">FAQS</a></li>
-                            <li><a class="dropdown-item" href="#">GALLERY</a></li>
-                            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            FEATURES
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">SHORTCODES</a></li>
-                            <li><a class="dropdown-item" href="#">ICONS</a></li>
-                            <li><a class="dropdown-item" href="#">STICKY HEADER</a></li>
-                            <li><a class="dropdown-item" href="#">SEARCH FORMS</a></li>
-                        </ul>
+        
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">SHOP</a>
+                        <a class="nav-link" href="#">TOURS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">BLOG</a>
+                        <a class="nav-link" href="#">CONTACT US</a>
                     </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+                </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..........">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔎</button>
+            </form>
             </div>
         </nav>
     </div>
 
     <div class="content">
-    </div>
+    <div>
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" style="margin-left: 20%; margin-right: 20%;">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/img8.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                    <h3>Beach</h3>
+                    <p>Beach is always so much fun!</p>
+                    </div>
+                </div>
+            
+                <div class="item">
+                    <img src="img/img9.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                    <h3>Natural</h3>
+                    <p>Always beautiful!</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="img/img10.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                    <h3>Temple</h3>
+                    <p>We love the Big Templele!</p>
+                    </div>
+                </div>
+            
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row1">
+                <div class="column">
+                <div class="card">
+                    <img src="img/img12.jpg">
+                    <h3>Tour 1</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+            
+                <div class="column">
+                <div class="card">
+                    <img src="img/img13.jpg">
+                    <h3>Tour 2</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+                
+                <div class="column">
+                <div class="card">
+                    <img src="img/img10.jpg">
+                    <h3>Tour 3</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+                
+                <div class="column">
+                <div class="card">
+                    <img src="img/img9.jpg">
+                    <h3>Tour 4</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="column">
+                <div class="card">
+                    <img src="img/img12.jpg">
+                    <h3>Tour 1</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+            
+                <div class="column">
+                <div class="card">
+                    <img src="img/img13.jpg">
+                    <h3>Tour 2</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+                
+                <div class="column">
+                <div class="card">
+                    <img src="img/img10.jpg">
+                    <h3>Tour 3</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+                
+                <div class="column">
+                <div class="card">
+                    <img src="img/img9.jpg">
+                    <h3>Tour 4</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="row3">
+                <div class="column">
+                <div class="card">
+                    <img src="img/img12.jpg">
+                    <h3>Tour 1</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+            
+                <div class="column">
+                <div class="card">
+                    <img src="img/img13.jpg">
+                    <h3>Tour 2</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+                
+                <div class="column">
+                <div class="card">
+                    <img src="img/img10.jpg">
+                    <h3>Tour 3</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+                
+                <div class="column">
+                <div class="card">
+                    <img src="img/img9.jpg">
+                    <h3>Tour 4</h3>
+                    <p class="price">$19.99</p>
+                    <p>This is ....</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>  
 
     <div class="footer">
-
+        <div>
+            <p class="text-center">Copyright &copy; fptaptechhcm.com</p>
+        </div>
     </div>
+    <script>
+        $('.carousel').carousel()
+        $('.carousel').carousel({
+            interval: 1000
+        })
+    </script>
+
 </body>
 </html> 
 
