@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      *{
+        margin-top: 0;
+        
+      }
+        .header table tr td a,select, option{
+          cursor: pointer;
+          color: black;
+          text-decoration: none;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          border-color: white;
+          outline:0;
+        }
+        .header table tr td{
+          width: 200px;
+          text-align: center;
+        }
+        .header table tr td img{
+          border-radius: 100%;
+        }
+        .header table tr td div{
+          border-style: solid;
+          border-color: white;
+          border-width: 2px;
+          max-width: 150px;
+          height: 40px;
+          display: flex; /* Canh giữa bằng flex */
+        justify-content: center;
+        align-items: center;
+        }
+        .header{
+          background-color: white;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-bottom-style: solid;
+          border-width: 2px;
+        }
+        #all-tour{
+          text-align: center;
+        }
+        marquee{
+          padding: 10px 0px 10px 0px;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          text-transform: uppercase;
+          text-shadow:0 0 10px red, 0 0 20px red, 0 0 30px red;
+          background-color: rgb(156, 156, 156);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <table>
+            <tr>
+                <td><img src="/image/logo.jpg" width="100" height="60"></td>
+                <td></td>
+                <td><div><a href="">home <i class="fa-solid fa-house"></i></a></div></td>
+                <td>
+                  <div>
+                    <select name="" id="all-tour">
+                      <option selected disabled>all tour</option>
+                      <option value="">mountain tour</option>
+                      <option value="">sea tour</option>
+                      <option value="">cave tour</option>
+                    </select>
+                  </div>
+                </td>
+                <td><div><a href="">your chosen trip</a></div></td>
+                <td><div><a href="">company location</a></div></td>
+                <td><div><a href="">Contact us</a></div></td>
+                <td>
+                  <div>
+                    <select name="" id="all-tour">
+                      <option selected disabled>Contact us</option>
+                      <option value="">Maill</option>
+                      <option value="">hotline</option>
+                    </select>
+                  </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: rgb(243, 103, 103);">
+      <marquee scrollamount="15">welcome spring 2023, we offer 20% off all tours from 15/12/2022 to 15/01/2023</marquee>
+    </div>
+    <div class="container" style="background-color:rgb(243, 103, 103); margin-left:0; margin-right:0; width:100%;"> 
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"style="width:90%; padding-left:10% ">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" style="padding-left:10%">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" id="divv">
+          <div class="item active">
+              <img src="/image/cave-photo.jpg" alt="Los Angeles" style="width:100%; height: 600px;">
+          </div>
+          <div class="item">
+              <img src="/image/climbing-photo.jpg" alt="Chicago" style="width:100%; height: 600px;">
+          </div>
+          <div class="item">
+              <img src="/image/sea-photo.jpg" alt="New york" style="width:100%; height: 600px;">
+          </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span id="next1" class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span id="next2" class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+  </div>
+  </div>
+</body>
+</html>
