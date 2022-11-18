@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="style.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -18,23 +19,28 @@
             float: left;
             position: absolute;
             left: 100%;
+<<<<<<< Updated upstream:Product.html
             margin-left: -70%;
+=======
+            margin-left: -60%;
+>>>>>>> Stashed changes:Home.html
             font-size: large;
         }
+
         .content{
-        margin-top: -20px;
+            margin-top: -20px;
         }
         *{
-        box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         body {
-        font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .column {
-        float: left;
-        width: 25%;
-        padding: 0 10px;
+            float: left;
+            width: 25%;
+            padding: 0 10px;
         }
         .column .card img{
             border-radius: 3px;
@@ -49,9 +55,9 @@
         .row {margin: 0 -5px;}
 
         .row:after {
-        content: "";
-        display: table;
-        clear: both;
+            content: "";
+            display: table;
+            clear: both;
         }
 
         @media screen and (max-width: 600px) {
@@ -63,10 +69,10 @@
         }
 
         .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        text-align: center;
-        background-color: #f1f1f1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
         }
         .footer .text-center{
             font-size: medium;
@@ -74,6 +80,7 @@
         .carousel-caption{
             color: whitesmoke;
         }
+<<<<<<< Updated upstream:Product.html
         .text-row1{
             text-align: center;
         }
@@ -87,13 +94,28 @@
             cursor: pointer;
             width: 100%;
             font-size: 18px;
+=======
+        .form-select{
+            width: 150px;
+        }
+        .tour{
+            margin-top: 40px;
+        }
+        .nav2 li{
+            margin-right: -200px;
+>>>>>>> Stashed changes:Home.html
         }
     </style>
 </head>
 <body>
     <div class="header">
+<<<<<<< Updated upstream:Product.html
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:white ;">
             <a class="navbar-brand" href="#"><img src="/images/logo.jpg" width="80" height="50"></a>
+=======
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">LOGO</a>
+>>>>>>> Stashed changes:Home.html
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -103,8 +125,17 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="#">TOURS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">TRAVEL TIPS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">HOTEL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">ABOUT US</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">TRAVEL TIPS</a>
@@ -116,10 +147,7 @@
                         <a class="nav-link" href="#">CONTACT US</a>
                     </li>
                 </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search..........">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔎</button>
-            </form>
+  
             </div>
         </nav>
     </div>
@@ -193,6 +221,7 @@
                 </a>
             </div>
         </div>
+<<<<<<< Updated upstream:Product.html
         <br>
         <div class="container-fluid">
             <div class="row1">
@@ -270,8 +299,95 @@
                     <p>This is icon place, you can.......</p>
                     <p><button>Add To Tours</button></p>
                 </div>
-                </div>
+=======
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav2">
+                <li class="nav-item active">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </li>
+                <li class="nav-item active">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </li>
+                <li class="nav-item active">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search..........">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔎</button>
+            </form>
+                  </nav>
+
+        </div>
+        <br>
+        <div class="tour">
+            <div class="container-fluid">
+                <div class="row1">
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img12.jpg">
+                        <h3>Tour 1</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
                 
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img13.jpg">
+                        <h3>Tour 2</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img10.jpg">
+                        <h3>Tour 3</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img9.jpg">
+                        <h3>Tour 4</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+>>>>>>> Stashed changes:Home.html
+                </div>
+    
+                <div class="row2">
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img12.jpg">
+                        <h3>Tour 1</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                
+<<<<<<< Updated upstream:Product.html
                 <div class="column">
                 <div class="card">
                     <img src="img/Tanah-Lot.jpg">
@@ -325,11 +441,76 @@
                     <p>This is icon place, you can.......</p>
                     <p><button>Add To Tours</button></p>
                 </div>
+=======
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img13.jpg">
+                        <h3>Tour 2</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img10.jpg">
+                        <h3>Tour 3</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img9.jpg">
+                        <h3>Tour 4</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="row3">
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img12.jpg">
+                        <h3>Tour 1</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img13.jpg">
+                        <h3>Tour 2</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img10.jpg">
+                        <h3>Tour 3</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column">
+                    <div class="card">
+                        <img src="img/img9.jpg">
+                        <h3>Tour 4</h3>
+                        <p class="price">$19.99</p>
+                        <p>This is ....</p>
+                    </div>
+                    </div>
+>>>>>>> Stashed changes:Home.html
                 </div>
             </div>
             </div>
         </div>
-
     </div>  
 
     <div class="footer">
@@ -337,12 +518,7 @@
             <p class="text-center">Copyright &copy; fptaptechhcm.com</p>
         </div>
     </div>
-    <script>
-        $('.carousel').carousel()
-        $('.carousel').carousel({
-            interval: 1000
-        })
-    </script>
+
 
 </body>
 </html> 
