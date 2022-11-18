@@ -18,7 +18,7 @@
             float: left;
             position: absolute;
             left: 100%;
-            margin-left: -40%;
+            margin-left: -70%;
             font-size: large;
         }
         .content{
@@ -38,6 +38,7 @@
         }
         .column .card img{
             border-radius: 3px;
+            height: 135px;
         }
         .column .card h3{
             margin-top: 2px;
@@ -73,6 +74,20 @@
         .carousel-caption{
             color: whitesmoke;
         }
+        .text-row1{
+            text-align: center;
+        }
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +105,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">TOURS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRAVEL TIPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACT US</a>
@@ -112,31 +133,50 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
             </ol>
         
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="img/img8.jpg" alt="Los Angeles" style="width:100%;">
+                    <img src="img/hoguom-hanoi.jpg" alt="Los Angeles" style="width:100%;">
                     <div class="carousel-caption">
-                    <h3>Beach</h3>
-                    <p>Beach is always so much fun!</p>
+                    <h3>Ho Guom</h3>
+                    <p>Favarite place form HaNoi-VietNam!</p>
                     </div>
                 </div>
             
                 <div class="item">
-                    <img src="img/img9.jpg" alt="Chicago" style="width:100%;">
+                    <img src="img/cauvang-danang.jpg" alt="Chicago" style="width:100%;">
                     <div class="carousel-caption">
-                    <h3>Natural</h3>
-                    <p>Always beautiful!</p>
+                    <h3>Cau Vang</h3>
+                    <p>Favarite place form DaNang-VietNam!</p>
                     </div>
                 </div>
                 
                 <div class="item">
-                    <img src="img/img10.jpg" alt="New York" style="width:100%;">
+                    <img src="img/bacthang-sapa.jpg" alt="New York" style="width:100%;">
                     <div class="carousel-caption">
-                    <h3>Temple</h3>
-                    <p>We love the Big Templele!</p>
+                    <h3>Ruong Bac Thang</h3>
+                    <p>Favarite place form SaPa-VietNam!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/lamvien-dalat.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                    <h3>Lam Vien</h3>
+                    <p>Favarite place form DaLat-VietNam!</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/phuquoc.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                    <h3>Phu Quoc</h3>
+                    <p>Favarite place form KienGiang-VietNam!</p>
                     </div>
                 </div>
             
@@ -156,117 +196,137 @@
         <br>
         <div class="container-fluid">
             <div class="row1">
+                <h1 class="text-row1">VietNam Tours</h1>
                 <div class="column">
                 <div class="card">
                     <img src="img/img12.jpg">
-                    <h3>Tour 1</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>Can Tho</h3>
+                    <p class="price">$199.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
             
                 <div class="column">
                 <div class="card">
                     <img src="img/img13.jpg">
-                    <h3>Tour 2</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>Ha Noi</h3>
+                    <p class="price">$222.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
                 
                 <div class="column">
                 <div class="card">
                     <img src="img/img10.jpg">
-                    <h3>Tour 3</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>Quang Ninh</h3>
+                    <p class="price">$299.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
                 
                 <div class="column">
                 <div class="card">
-                    <img src="img/img9.jpg">
-                    <h3>Tour 4</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <img src="img/hue.jpg">
+                    <h3>Hue</h3>
+                    <p class="price">$119.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
             </div>
 
+            <div class="container-fluid">
             <div class="row2">
+                <h1 class="text-row1">Indonesia Tours</h1>
+
                 <div class="column">
                 <div class="card">
-                    <img src="img/img12.jpg">
-                    <h3>Tour 1</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <img src="img/Borobudur.jpg">
+                    <h3>Borobudur</h3>
+                    <p class="price">$199.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
             
                 <div class="column">
                 <div class="card">
-                    <img src="img/img13.jpg">
-                    <h3>Tour 2</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <img src="img/Gili-Islands.jpg">
+                    <h3>Gili Islands</h3>
+                    <p class="price">$299.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
                 
                 <div class="column">
                 <div class="card">
-                    <img src="img/img10.jpg">
-                    <h3>Tour 3</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <img src="img/Uluwatu_Temple.jpg">
+                    <h3>Pura Luhur Uluwatu</h3>
+                    <p class="price">$229.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
                 
                 <div class="column">
                 <div class="card">
-                    <img src="img/img9.jpg">
-                    <h3>Tour 4</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <img src="img/Tanah-Lot.jpg">
+                    <h3>Tanah Lot</h3>
+                    <p class="price">$499.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
             </div>
-            
+            </div>
+
+            <div class="container-fluid">
             <div class="row3">
+                <h1 class="text-row1">Thailand Tours</h1>
                 <div class="column">
                 <div class="card">
                     <img src="img/img12.jpg">
-                    <h3>Tour 1</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>The Grand Palace</h3>
+                    <p class="price">$199.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
             
                 <div class="column">
                 <div class="card">
                     <img src="img/img13.jpg">
-                    <h3>Tour 2</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>Wat Pho</h3>
+                    <p class="price">$299.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
                 
                 <div class="column">
                 <div class="card">
                     <img src="img/img10.jpg">
-                    <h3>Tour 3</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>Railay Beach</h3>
+                    <p class="price">$129.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
                 
                 <div class="column">
                 <div class="card">
                     <img src="img/img9.jpg">
-                    <h3>Tour 4</h3>
-                    <p class="price">$19.99</p>
-                    <p>This is ....</p>
+                    <h3>Wat Chedi Luang</h3>
+                    <p class="price">$399.99</p>
+                    <p>This is icon place, you can.......</p>
+                    <p><button>Add To Tours</button></p>
                 </div>
                 </div>
+            </div>
             </div>
         </div>
 
