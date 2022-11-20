@@ -15,7 +15,7 @@
         margin-top: 0;
         
       }
-        .header table tr td a,select, option{
+        .header table tr td a{
           cursor: pointer;
           color: black;
           text-decoration: none;
@@ -28,7 +28,9 @@
         }
         .header table tr td{
           width: 200px;
+          height: 70px;
           text-align: center;
+          transition:all 0.5s;
         }
         .header table tr td img{
           border-radius: 100%;
@@ -37,23 +39,15 @@
           background-color: rgb(255, 50, 132);
           border-bottom-style: solid;
           border-width: 2px;
+          transition:all 0.5s;
+          height: 70px;
           position: fixed;
           z-index:1;
-          padding: 15px 0;
-          transition:all 0.5s ;
-          box-shadow: 1px 0 10px black;
+          box-shadow: 1px 1px 10px black;
         }
         #all-tour{
           text-align: center;
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        marquee{
-          padding: 10px 0px 10px 0px;
-          font-size: 15px;
-          font-weight: bold; 
-          color: white;
-          text-transform: uppercase;
-          text-shadow:0 0 10px red, 0 0 20px red, 0 0 30px red;
         }
         .content{
           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -64,10 +58,16 @@
           margin-left: 10%;
           margin-left: 5%;
         }
-        .sticky table tr td div, .sticky, .sticky table tr td select{
-          padding:5px 0;
+        .sticky,.sticky table tr td{
+          height: 60px;
           opacity: 0.9;
+          top: 0;
+          left: 0;
           background-color: rgb(255, 50, 132);
+          box-shadow: 4px 4px 10px black;
+        }
+        .sticky table tr td .sub-menu{
+          margin-top: 10%;
         }
         .content table tr td div{
           box-shadow: 0 0 3px black;
@@ -130,40 +130,116 @@
         .carousel-control{
           width: 5%;
         }
-
+        header{
+          text-align: center;
+          background-color: rgb(12, 0, 123);
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        header .name{
+          font-size: 25px;
+          font-weight: bold;
+          color: white;
+        }
+        header .slogan{
+          font-size: 15px;
+          color: bisque;
+          font-style: italic;
+        }
+        header .logo img{
+          float: left;
+          margin-left: 2%;
+        }
+        .menu{
+          position: relative;
+        }
+        .menu .sub-menu{
+          position: absolute;
+          list-style: none;
+          background-color: rgb(255, 50, 132);
+          margin-left: 12%;
+          margin-top: 13%;
+          padding-left: 0px;
+          display: none;
+        }
+        .menu .sub-menu li{
+          border-bottom: 1px solid rgb(254, 137, 184);
+          width: 150px;
+          padding: 5px 0px;
+          transition: all 0.5s;
+          
+        }
+        .menu:hover>.sub-menu{
+          display: block;
+        }
+        .hover:hover{
+          background-color: rgb(251, 102, 162);
+        }
+        .hover:hover>a{
+          background-color: rgb(251, 102, 162);
+        }
+        .hover a{
+          transition: all 0.5s;
+        }
+        .sub-menu{
+          border: 1px solid rgb(254, 137, 184);
+        }
+        .sub-menu li:hover, .sub-menu li:hover>a{
+          background-color:rgb(251, 102, 162);
+          color: rgb(246, 203, 203);
+        }
     </style>
 </head>
 <body>
-    <header class="header">
+  <header>
+    <div class="logo">
+      <img src="/images/logo.jpg" width="80" height="70">
+      <p class="name">VN GO Travel</p>
+      <p class="slogan">Traveling to Vietnam, going is fun, coming back is remembering</p>
+    </div>
+  </header>
+    <nav class="header">
         <table>
             <tr>
-                <td><img src="/images/logo.jpg" width="80" height="70"></td>
                 <td></td>
-                <td><a href="">home <i class="fa-solid fa-house"></i></a></td>
-                <td>
-                  
-                    <select name="" id="all-tour">
-                      <option selected disabled>all tour</option>
-                      <option value="">mountain tour</option>
-                      <option value="">sea tour</option>
-                      <option value="">cave tour</option>
-                    </select>
-                  
+                <td class="hover"><a href="">home <i class="fa-solid fa-house"></i></a></td>
+                <td class="menu hover">
+                  <a href="">Northern travel</a>
+                    <ul class="sub-menu">
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                    </ul>
                 </td>
-                <td><a href="">your chosen trip</a></td>
-                <td><a href="">company location</a></td>
-                <td><a href="">Contact us</a></td>
-                <td>
-                    <select name="" id="all-tour">
-                      <option selected disabled>Contact us</option>
-                      <option value="">Maill</option>
-                      <option value="">hotline</option>
-                    </select>
-                </td>
+                <td class="menu hover">
+                  <a href="">Northern travel</a>
+                    <ul class="sub-menu">
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                    </ul>
+                    <td class="menu hover">
+                      <a href="">Northern travel</a>
+                        <ul class="sub-menu">
+                          <li><a class="location" href="">Sapa</a></li>
+                          <li><a class="location" href="">Sapa</a></li>
+                          <li><a class="location" href="">Sapa</a></li>
+                          <li><a class="location" href="">Sapa</a></li>
+                        </ul>
+                <td class="hover"><a href="">your chosen trip</a></td>
+                <td class="menu hover">
+                  <a href="">Northern travel</a>
+                    <ul class="sub-menu">
+                      <li><a class="location" href="">Sapa</a></li>
+                      <li><a class="location" href="">Sapa</a></li>
+                    </ul>
+                <td></td>
             </tr>
         </table>
-      </header>
-    <div style="padding-top: 110px;" class="introduce">
+      </nav>
+    <div style="padding-top: 74px;" class="introduce">
       <table>
         <tr>
           <td>
@@ -238,9 +314,9 @@
     $(document).ready(function(){
       $(window).scroll(function(){
         if($(this).scrollTop()){
-          $('header').addClass('sticky');
+          $('nav').addClass('sticky');
         }else{
-          $('header').removeClass('sticky');
+          $('nav').removeClass('sticky');
         }
       });
     });
