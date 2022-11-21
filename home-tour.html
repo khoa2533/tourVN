@@ -139,16 +139,29 @@
         header .name{
           font-size: 25px;
           font-weight: bold;
-          color: white;
+          color: rgb(0, 255, 0);
         }
-        header .slogan{
-          font-size: 15px;
-          color: bisque;
+        header p .slogan{
+          font-size: 13px;
+          color: rgb(220, 131, 255);
           font-style: italic;
         }
         header .logo img{
           float: left;
           margin-left: 2%;
+          border-radius: 100%;
+      
+        }
+        header .logo p{
+          padding-left: 29%;
+        }
+        header .logo #tel{
+          color: white;
+          padding-top: 1%;
+          font-size: 15px;
+          text-align: left;
+          padding-left: 20%;
+          color: yellowgreen;
         }
         .menu{
           position: relative;
@@ -187,21 +200,27 @@
         .sub-menu li:hover, .sub-menu li:hover>a{
           background-color:rgb(251, 102, 162);
         }
+        .name #red{
+          color: red;
+        }
+        .name span{
+          color: yellow;
+        }
     </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="/images/logo.jpg" width="80" height="70">
-      <p class="name">VN GO Travel</p>
-      <p class="slogan">Traveling to Vietnam, going is fun, coming back is remembering</p>
+    <div style="display:flex;" class="logo">
+      <img src="/images/logo.jpg" width="75" height="70">
+      <p class="name"><span id="red">VN</span> <span>GO</span> Travel<br> <span class="slogan">Traveling to Vietnam, going is fun, coming back is remembering</span></p>
+      <p id="tel">Tel: 19006789 <br><span>Mail: vngotravel@gmail.com.vn</span></p>
     </div>
   </header>
     <nav class="header">
         <table>
             <tr>
                 <td></td>
-                <td class="hover"><a href="">home <i class="fa-solid fa-house"></i></a></td>
+                <td class="hover"><a class="menu" href="">home <i class="fa-solid fa-house"></i></a></td>
                 <td class="menu hover">
                   <a href="">Northern travel</a>
                     <ul class="sub-menu">
