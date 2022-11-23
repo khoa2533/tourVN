@@ -32,7 +32,7 @@
           transition:all 0.5s;
           height: 70px;
           position: fixed;
-          z-index:1;
+          z-index:16;
           box-shadow: 1px 1px 10px black;
         }
         #all-tour{
@@ -219,3 +219,6 @@
         .footer p,.footer ul{
           padding-top: 1%;
         }
+        .header table tr .menu ul, .header table tr .menu{
+          cursor: pointer;
+        } 
