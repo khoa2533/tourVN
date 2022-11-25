@@ -164,13 +164,65 @@ header .logo #tel{
     margin-right: auto;
 }
 .product div table tr td{
-    padding: 10%;
+    padding: 2%;
+    cursor: pointer;
 }
 .product div table tr td div{
-    border-style: solid;
+    /* border: 1px solid; */
+    box-shadow: 0 0 10px 2px rgb(74, 74, 74);
    max-width: 400px;
    width: auto;
+   background-color: rgb(255, 255, 210);
 }
-.product div table tr td img{
+.product div table tr td div img{
     width: 100%;
+}
+.product div table tr td div:hover>img{
+    opacity: 0.7;
+    transition: opacity 0.6s;
+}
+.product-card table tr td div p{
+    font-size: 15px;
+    padding-left: 5%;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product-card table tr td div .place-name{
+    text-align: center;
+    padding-left: 0;
+    padding-top: 2%;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(157, 157, 0);
+}.product-card table tr td div .price{
+    text-decoration:line-through;
+}
+.product-card table tr td div .price-sale{
+    color: red;
+}
+.product div table tr td div .opaque{
+    border: none;
+    box-shadow: none;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+.footer{
+    background-color: rgb(12, 0, 123);
+    font-size: 15px;
+    color: white;
+    margin-top: 5%;
+    padding-top: 1%;
+    display: flex;
+    text-align: center;
+}
+.footer div img{
+    width: 85px;
+    height: 80px;
+    border-radius: 100%;
+}
+.footer p,.footer ul{
+    padding-top: 1%;
 }
