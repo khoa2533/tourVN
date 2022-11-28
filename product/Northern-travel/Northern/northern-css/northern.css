@@ -181,8 +181,21 @@ header .logo #tel{
    border-radius: 3%;
    padding-bottom: 1%;
 }
+.product div table tr td a div button{
+    background-color: rgb(255, 255, 189);
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 104, 104);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
 .product div table tr td a div:hover{
     box-shadow: 5px 5px 10px 5px rgb(158, 158, 158);
+}
+.product div table tr td a div:hover>button{
+    background-color: red;
+    transition: background-color 0.6s;
 }
 .product div table tr td a div div img{
     width: 100%;
