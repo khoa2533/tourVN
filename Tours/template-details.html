@@ -1,0 +1,39 @@
+
+
+<div class="col-md-12 mt-5">
+    <div class="card card-details">
+        <div class="row">
+            <div class="col-6">
+                <img src="{{ product.imgUrl }}" class="card-img-top w-100">
+            </div>
+            <div class="col-6">
+                <p class="card-text mr-4 text-success">
+                    <h2 class="card-title" style="font-size: large;"><b>{{ product.title }}</b></h2>
+                    <p class="card-title card-price">{{ product.price }}</p>
+                </p>
+                <div>
+                    <label for="cars">Select start time:</label>
+                    <select id="cars">
+                      <option value="audi" selected>24th November</option>
+                      <option value="volvo">25th November</option>
+                      <option value="saab">26th November</option>
+                      <option value="vw">27th November</option>
+                    </select>
+                </div>
+                <p><b>Tours Description:</b></p>
+                <p class="card-text card-subDes" style="font-family: Arial, Helvetica, sans-serif;">{{ product.subDescription }}</p>
+                <p class="card-text">{{ product.description }}</p>
+      
+                <a href="img/download.jpg" download="w3logo">
+                    <button aria-readonly="true">More Tours Information&#128073;</button>
+                    <img src="img/download.jpg" alt="W3Schools" width="50px" height="50px">
+                </a>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="d-flex justify-content-between">
+            </div>
+        </div>
+    </div> 
+</div>

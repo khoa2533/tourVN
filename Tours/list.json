@@ -1,0 +1,102 @@
+{
+    "":
+    [
+        {"no": 1, "id": "C01", "title": "Fansipan Peak Sapa (The highest mountain in Indochina)", "imgUrl":"images/pansipan.png"},
+        {"no": 2, "id": "C01", "title": "stone church in Sapa", "imgUrl":"images/Sapa-stone-church.jpg"},
+        {"no": 3, "id": "C01", "title": "Snow scene in Sapa in winter", "imgUrl":"images/snow-in-sapa.jpg"},
+        {"no": 4, "id": "C01", "title": "heart tea hill", "imgUrl":"images/moc-chau-1.jpg"},
+        {"no": 5, "id": "C01", "title": "glass bridge", "imgUrl":"images/moc-chau-2.jpg"},
+        {"no": 6, "id": "C01", "title": "S-shaped road", "imgUrl":"images/moc-chau-3.jpg"},
+        {"no": 1, "id": "C01", "title": "Ba Na hills tourist destination", "imgUrl":"images/cau-vang-ba-na-hills.jpg"},
+        {"no": 1, "id": "C01", "title": "Da Nang beach", "imgUrl":"images/bien-danang.jpg"},
+        {"no": 1, "id": "C01", "title": "Dragon Bridge", "imgUrl":"images/cau-rong.jpg"}
+    ],
+    "products":
+    [
+        {
+            "no": 1, "id": "C01", "title": "HANOI - BAT XAT - LONG PO - CHI SON NGU - SAPA (1 Night 2 Days)", "description":"", "price": "Price: 54.38$","imgUrl":"img/muonhum-sapa.jpg"
+            , "subDescription": "You will have to scream this is the most beautiful road, magically beautiful when all the fields wear different colors such as the green of the late transplanted fields, the golden color of the right transplanted fields. , or the light yellow color of the harvested fields of early transplants, or the sparkling colors of the pouring water season, etc., forming a colorful picture…. The terraced fields are layered, one after another, but there is no starting point or end point, looking both close and far, both clear and hidden in the floating clouds interspersed in the plots. terraced fields, or corn fields, rice fields, etc. are houses or villages in the middle of a mountain, halfway up a hill, etc. We cannot describe it all in words, so we hope you and VIETTOURIST join us to explore the area. explore and appreciate the beauty on the high mountains of Lung Po, A Lu, Y Ty, Den Sang, Sang Ma Sao, Muong Hum, Ngu Chi Son, Sapa,... to see the scenery only in the highlands, Let people return but the soul does not return!"
+            , "type": "North"
+        },
+        {
+            "no": 2, "id": "C02", "title": "NINH THUAN - DA LAT - HA NOI (4 Night 5 Days)", "description":"", "price": "175.21$","imgUrl":"img/dalatcity.jpg"
+            , "subDescription": "You have a plan to go to Ninh Thuan with a group of close friends and you are in need of the necessary information to show off your talent in organizing a tour according to the schedule 'Tourism Phan Rang Vinh Hy self-sufficient' in the most professional and economical way. This article hopes to bring you that necessary information. Let VNGOTRAVEL accompany you in this plan!"
+            , "type": "North"
+
+        },
+        {
+            "no": 3, "id": "C03", "title": "HA NOI - PHU YEN - TUY HOA (2 Night 3 Days)", "description":"", "price": "Price: 116.81$","imgUrl":"img/tuyhoa-phuyen.jpg"
+            , "subDescription": "Tuy Hoa beach is a horizontal beach that receives all seasons of wind and the salty taste of the sea. The poplar forest of the horizontal beach has grown up, creating a highlight for the city, adding beauty to the coast with rows of poplars..."
+            , "type": "North"
+        },
+        {
+            "no": 4, "id": "C04", "title": "SAPA- Flying In The Middle Of The Flower Season (3 days)", "description":"", "price": "114.79$","imgUrl":"img/sapa-laocai.jpg"
+            , "subDescription":"SAPA- the magical land created by nature and generously endowed here with majestic mountains, winding passes and deep valleys, fog flies at any time of the day. make Sapa blurry and strangely attractive. deep valleys. The hardworking people of Sapa over the years have created golden terraced fields in the ripe rice season. The sightseeing program from Hanoi - Sapa will help you have interesting experiences with special contents: Conquering the roof of Indochina, Fansipan peak, Visiting Rose Garden, Ma Tien Thao Flower Garden ... ( the flowers change according to the season), visit the attractive Cat Cat village with simple wooden houses, murmuring streams, colorful brocade panels and learn about the lives of local people, Sapa - charming with terraced fields and majestic scenery of mountains and forests, Standard hotel system from 4 stars or more; High-quality food menu, quality assurance, 10-20 years experience in the field; Enthusiastic experienced tour guide!"
+            , "type": "North"
+        },
+        {
+            "no": 5, "id": "C05", "title": "THE OCCASION OF THE ORGANIZED FOREST (3 Night 4 Days)", "description":"", "price": "Price: 108.75$","imgUrl":"img/taynguyen.jpg"
+            , "subDescription": "The Central Highlands or the South Central Highlands is an area with plateau topography including provinces ranked in geographical order from the North to the South, including Kon Tum, Gia Lai, Dak Lak, Dak Nong and Lam Dong. The Central Highlands is a region in central Vietnam. The Central Highlands together with the North Central Coast and the South Central Coast form Central Vietnam."
+            , "type": "South"
+        },
+        {
+            "no": 6, "id": "C06", "title": "SOC TRANG - CON DAO - CAN TRAN DE (2 Night 3 Days)", "description":"", "price": "Price: 400$","imgUrl":"img/soctrangcondao.jpg"
+            , "subDescription": "Con Dao tourism is an attractive destination for travel enthusiasts who love to explore, experience and relax. Every year, this place welcomes millions of domestic and foreign tourists because of its wild and charming beauty with long fine white sand beaches, turquoise sea along with historical sites that make Con Dao a destination for tourists. Famous tourism not only in Vietnam but also in the world."
+            , "type": "South"
+        },
+        {
+            "no": 7, "id": "C07", "title": "NHA TRANG - BEAUTY ISLAND (4 days)", "description":"", "price": "Price: 261.40$","imgUrl":"img/biennhatrang.jpg"
+            , "subDescription": "This journey will take visitors to Nha Trang in the White Sand region with interesting and attractive attractions: Nha Trang Bay, Binh Ba Island, Vinpearland Entertainment Paradise, Long Son Pagoda…. Especially on this occasion, tourists are offered a stimulus package with a discount of 30-40%. Compared to regular tours!"
+            , "type": "South"
+        },
+        {
+            "no": 8, "id": "C08", "title": "THIEN CAM - VUNG CHUA (2 Night 3 Days) ", "description":"", "price": "Price: 88.61$","imgUrl":"img/thiencamvungchua.jpg"
+            , "subDescription": "According to legend, during the reign of the 13th Hung King, he heard the wind, waves and the sound of pine needles ringing against the cliffs to create a melodious music, like a fairy playing a lute. The King ordered his courtiers to climb the mountain, seeing that it looked like a Ti Ba lute, and immediately lowered his pen to write down the three words Thien Cam Son. 'Thien Cam' means heaven's flock. There is also another legend, when Ho Quy Ly was chased here by the Ming army, he was arrested, so he called it Thien Cam (heaven kept)."
+            , "type":"South"
+        },
+        {
+            "no": 9, "id": "C09", "title": "BAN ME OF LEGENDS (2 Night 3 Days)", "description":"", "price": "Price: 64.04$","imgUrl":"img/banme-buonmathuoc.jpg"
+            , "subDescription": "Coming to the coffee capital of Buon Ma Thuot, the specialty to treat visitors is 'The sun, the wind, ...' as people often say about this land. The sky is so high and blue that it is only hot during the day and cool at night. There are trees everywhere, vast primeval forests, rubber trees, coffee beans, cocoa trees, fruit trees, shade trees, etc. They are small, clean and beautiful streets and roads. , the two sides are also a good blue. Coffee - the perfect addictive drink, ready for you to enjoy at your leisure. The people of Ban Me are warm, friendly and hospitable with a very diverse culture..."
+            , "type":"South"
+        },
+        {
+            "no": 10, "id": "C010", "title": "PHU QUOC -  DONG DUONG MARKET - SEA PARADISE (3 Night 4 Days)", "description":"", "price": "Price: 92.60$","imgUrl":"img/phuquoc-kiengiang.jpg"
+            , "subDescription": "Phu Quoc is an island located in the Gulf of Thailand and is the largest island in Vietnam. Administratively, Phu Quoc island, together with neighboring smaller islands and Tho Chu archipelago, 55 nautical miles to the southwest, composes Phu Quoc island city under Kien Giang province."
+            , "type":"Central"
+        },
+        {
+            "no": 11, "id": "C011", "title": "HA NOI - SAI GON - MUI NE - HANOI (2 Night 3 Days)", "description":"", "price": "143.39$","imgUrl":"img/muine-binhthuan.jpg"
+            , "subDescription": "Mui Ne is a place, the name of a cape in Phan Thiet city, Binh Thuan province, Vietnam. This is a famous tourist area of Binh Thuan province and one of the national tourist areas of Vietnam (however, most resorts are concentrated in Ham Tien ward, near Mui Ne. ) . Administratively, the entire coastal area from Mui Ne to Hon Rom is located about 7 km away, which is Mui Ne ward of Phan Thiet city."
+            , "type":"Central"
+        },
+        {
+            "no": 12, "id": "C012", "title": "HA NOI - HA NOI - BAC YEN - TA XUA  (1 Night 2 Days)", "description":"", "price": "60.01$","imgUrl":"img/mocchau-sonla.jpg"
+            , "subDescription":"Each season, Moc Chau wears different clothes. Sometimes it's pictures of green meadows stretching endlessly, fields of white cabbage as far as the eye can see, sometimes pink bands of peach color, pristine white shirts filled with the vitality of plum flowers... Before Tet and After the Lunar New Year (about the end of January, to the end of February of the solar calendar): peach and plum flowers bloom in every corner of Moc Chau."
+            , "type":"Central"
+        },
+        {
+            "no": 13, "id": "C013", "title": "HA NOI - HA NOI - DIEN BIEN - SON LA - HA NOI (3 Night 4 Days)", "description":"", "price": "140.97$","imgUrl":"img/mocchaudienbien.jpg"
+            , "subDescription":"Dien Bien is located on the western edge of the Northwest region of Vietnam. The province has geographical coordinates from 20°54' to 22°33' North latitude and from 102°10' to 103°36' East longitude. The province is located 504 km west of Hanoi capital, borders Son La province to the east and northeast, Lai Chau province to the north, China's Yunnan province to the northwest, and Phongsali and Luang provinces. Prabang of Laos to the west and southwest."
+            , "type":"Central"
+        },
+        {
+            "no": 14, "id": "C014", "title": "BA VANG Pagoda - YÊN TỬ - HOA YEN Pagoda (1 day)", "description":"", "price": "34.24$","imgUrl":"img/chuahoayen-bariavungtau.jpg"
+            , "subDescription":"Yen Tu is a beautiful mountain famous in our country with clear streams, floating like silk fabric winding around bamboo forests, immense green pine forests, looming ancient towers and temples. This place was once the Buddhist capital with the famous Truc Lam Zen sect whose founder was a national hero - King Tran Nhan Tong (1258-1308). Ba Vang Pagoda - the mountain temple with the largest main hall in Vietnam in Yen Tu (Quang Ninh). Ba Vang Pagoda has a feng shui circuit originating from Dong Pagoda (Yen Tu) with an altitude of 1,080m and the lower terrain forming a dragon and white tiger position, with a ground to cultivate to form a pagoda in gratitude to the Buddha."
+            , "type":"Central"
+        },
+        {
+            "no": 15, "id": "C015", "title": "BAI ĐINH Pagoda - TRAN TEMPLE - PHU MINH TOWER (1 day)", "description":"", "price": "50.35$","imgUrl":"img/chuabaidinh-ninhbinh.jpg"
+            , "subDescription":"Bai Dinh Pagoda is a large temple complex with many Asian and Vietnamese records, established as the temple with the largest gilded bronze Buddha in Asia, the temple with the longest Arhat corridor in Asia, and the Maitreya statue. The largest bronze temple in Southeast Asia... This is the largest temple and owns the most records in Vietnam."
+            , "type":"Central"
+        
+        }
+    ],
+    "news":
+    [
+        {"no": 1, "id": "C01", "title": "Java Programing", "description":"LT", "price": 500,"imgUrl":"img/baibienanbang-quangnam.jpg"},
+        {"no": 2, "id": "C02", "title": "Reac Native + NodeJs", "description":"LT", "price": 400,"imgUrl":"img/cauvang-danang.jpg"},
+        {"no": 3, "id": "C03", "title": "Design a SGP with HTML5-CSS3", "description":"ST", "price": 300,"imgUrl":"img/chuabaidinh-ninhbinh.jpg"},
+        {"no": 4, "id": "C04", "title": "UI/UX Principle", "description":"ST", "price": 200,"imgUrl":"img/chuamotcot-hanoi.jpg"},
+        {"no": 5, "id": "C05", "title": "UI/UX Principle", "description":"ST", "price": 200,"imgUrl":"img/chuamotcot-hanoi.jpg"}
+    ]
+}
