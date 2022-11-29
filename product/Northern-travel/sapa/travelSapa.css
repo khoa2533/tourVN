@@ -148,90 +148,72 @@ header .logo #tel{
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       text-transform: uppercase;
 }
-.product{
-    padding-top: 80px;
-    text-align: center;
-}
-.product #location p{
-    background-color: pink;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(123, 123, 0);
-}
-.product div table{
+.details{
+    margin-top: 100px;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+    padding: 2% 5%;
+    box-shadow: 0 0  10px 2px gray;
 }
-.product div table tr td{
-    padding: 2%;
-    cursor: pointer;
-}
-.product div table tr td a{
-    text-decoration: none;
-    color: blue;
-}
-.product div table tr td a>div{
-    /* border: 1px solid; */
-    box-shadow: 0 0 10px 2px rgb(196, 196, 196);
-   max-width: 400px;
-   width: auto;
-   background-color: rgb(255, 255, 189);
-   transition: box-shadow 0.6s;
-   border-radius: 3%;
-   padding-bottom: 1%;
-}
-.product div table tr td a div button{
-    background-color: rgb(255, 255, 189);
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(255, 104, 104);
-    color: white;
-    font-size: 15px;
+.details #location{
     font-weight: bold;
-    transition: background-color 0.6s;
-}
-.product div table tr td a div:hover{
-    box-shadow: 5px 5px 10px 5px rgb(158, 158, 158);
-}
-.product div table tr td a div:hover>button{
-    background-color: red;
-    transition: background-color 0.6s;
-}
-.product div table tr td a div div img{
-    width: 100%;
-    opacity: 0.8;
-    border-radius: 3% 3% 0% 0%;
-    transition: opacity 0.6s;
-}
-.product div table tr td a div:hover>div img{
-    opacity: 1;
-    transition: opacity 0.6s;
-}
-.product-card table tr td a div p{
-    font-size: 15px;
-    padding-left: 5%;
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.product-card table tr td div .place-name{
     text-align: center;
-    padding-left: 0;
+    margin: 0;
+    padding-bottom: 2%;
+    color: rgb(46, 157, 254);
+}
+.details div{
+    display: flex;
+}
+.details .vertical{
     padding-top: 2%;
-    font-size: 20px;
+    display: block;
+}
+.details .vertical p select{
+    outline: none;
+}
+.details p{
+    font-size: 17px ;
+}
+.details div div img{
+    max-width: 100%;
+    width: auto;
+}
+.details div .input{
+    width: 70%;
+    margin-left: 10%;
+    
+}
+.details div div form{
+    /* background-color: rgb(132, 132, 255); */
+    padding: 5%;
+    height: 100%;
+    /* border-radius: 40px; */
+    border: 1px solid;
+    /* box-shadow: 0 0 10px 2px gray; */
+}
+.details div div form label{
+    font-size: 18px;
+}
+.details div div form p{
+    font-size: 25px;
     font-weight: bold;
-    color: rgb(157, 157, 0);
-}.product-card table tr td div .price{
-    text-decoration:line-through;
+    text-align: center;
 }
-.product-card table tr td div .price-sale{
-    color: red;
-}
-.product div table tr td a div .opaque{
+.details div div form .information{
+    font-size: 15px;
+    width: 100%;
+    height: 30px;
     border: none;
-    box-shadow: none;
-    background-color: rgb(0, 0, 0);
-    border-radius: 3% 3% 0 0;
+    border-bottom: 1px solid;
+    outline: none;
+}
+.details div div form #send{
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 24%;
 }
 .footer{
     background-color: rgb(12, 0, 123);
