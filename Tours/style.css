@@ -39,7 +39,13 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .content{
-    background-color: rgb(255, 50, 132);
+    background-color: #ffafde;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+.content .content-blog{
+    background-color: #ffafde;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: -20px;
     padding-bottom: 20px;
@@ -112,6 +118,23 @@ body{
     padding-bottom:5px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
+}
+@keyframes flicker-product{
+    0%{color: white; text-shadow: 1px 1px 10px white;}
+    50%{color: yellow;text-shadow: 1px 1px 10px yellow;}
+    100%{color: white;text-shadow: 1px 1px 10px white;}
+}
+.flicker-product{
+    animation: flicker-product 0.5s infinite;
+    background-color: rgb(251, 152, 152);
+    text-align:center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom:5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 72px;
 }
 .introduce table tr td .banner{
     max-width: 100%;
@@ -203,9 +226,6 @@ header .logo #tel{
 }
 .name span{
     color: yellow;
-}
-.hr-footer{
-    border: 10px solid black;
 }
 .footer{
     font-size: medium;
@@ -302,13 +322,165 @@ body{
 
 /* Style the counter cards */
 .card{
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-    background-color: #f1f1f1;
+    background-color: #feffaf !important;
 }
 img .w-100{
     width: 90% !important;
 }
+div .button-pruduct-card .button-card a{
+    text-align: center;
+}
+.button-card{
+    background-color: red;
+
+}
+.button-card a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.checked{
+    color: orange;
+}
+.home-news1{
+    width: 100%;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.home-news1 .table tbody td{
+    text-align: left;
+}
+.home-tablename{
+    text-align: left;
+}
+.title-home{
+    text-align: center;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    color: darkcyan;
+}
+.title-table{
+    color: mediumseagreen;
+}
+.img-home{
+    width: 100%;
+}
+.contactus-title{
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.contactus-title h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    color: slateblue;
+    margin-top: -18px;
+    position: relative;
+}
+.contactus-title p{
+    text-align: center;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: darkred;
+}
+.content-contactus{
+    margin-top: 40px;
+}
+.content-contactus-main{
+    background-color: wheat;
+    padding-bottom: 20px;
+    width: 101%;
+}
+.content-contactus-row1{
+    padding-left: 200px;
+    font-size: large;
+}
+.content-contactus-row2{
+    font-size: large;
+}
+.footer-contactus{
+    font-size: medium;
+    background-color: orangered;
+    color: white;
+}
+.footer-contactus .logo-footer img{
+    margin: auto;
+    height: 100px;
+    width: 120px;
+}
+table .table-contactus{
+    margin-left: auto;
+    margin-right: auto;
+}
+table .table-contactus form tr td input{
+    padding-top: 20px;
+}
+.error-Msg{
+    color: red;
+}
+.error-Msgdetails{
+    color: red;
+}
+#my-Name{
+    width: 400px;
+}
+#my-Email{
+    width: 400px;
+}
+#my-Phone{
+    width: 400px;
+}
+iframe{
+    height: 300px;
+    width: 500px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+.title-details{
+    text-align: center;
+}
+.title-details h2 b{
+    color: blue;
+    font-family: monospace;
+}
+.btn-detailsword{
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background: #49C608;
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 10px;
+	margin: 0;
+    margin-right: 10px;
+}
+.btn-detailsword:hover{transform: translateY(-4px);}
+
+.btn-details{
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background: #49C608;
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 10px;
+	margin: 0;
+}
+.btn-details:hover{transform: translateY(-4px);}
 /* *, *:before, *:after{
     margin: 0;
     padding: 0;
